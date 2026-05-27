@@ -59,5 +59,5 @@
     - 其他建议
 - [彊埶 alimey.](https://www.cngal.org/entries/index/5687)
     - 封面设计建议
-- 邹沛洋、孙吴越
+- [邹沛洋](https://space.bilibili.com/1137065970)、孙吴越
     - 《自由喜剧》数字录入
