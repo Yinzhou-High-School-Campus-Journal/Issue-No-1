@@ -26,7 +26,7 @@
 
 #### 主编
 
-- 沈泽厚
+- [沈泽厚](https://github.com/Mr-Drinking)
    - 对接校方
    - 技术框架建立
    - 统稿
@@ -41,7 +41,7 @@
 
 #### 编辑
 
-- 叶静轩（@Mr-Eating）
+- [叶静轩](https://github.com/Mr-Eating)
    - 对接校方
    - 修改了大部分创意写作稿件
    - 其他建议
