@@ -1,6 +1,6 @@
 ### 概览
 
-欢迎来到《鄞年・思叙：鄞州中学校园期刊》（*Yinzhou High School Campus Journal*）创刊号的官方 GitHub 仓库，我们将会把技术范围内能上传／能归档的所有文件都上传到此处。
+欢迎来到《鄞年・思叙：鄞州中学校园期刊》（*Yinzhou High School Campus Journal*）创刊号的官方 GitHub 仓库，我们将会把技术范围内能上传／归档的所有文件都上传到此处。
 
 ### 为什么要建立此仓库？
 
