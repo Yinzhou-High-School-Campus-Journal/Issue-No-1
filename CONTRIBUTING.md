@@ -21,11 +21,17 @@
 
 ```
 title: "文章标题"
+
 author: "班级 作者"
+
 author_display: "作者实际署名"
+
 received_date: "yyyy-mm-dd"
+
 status: "文章状态"
-note: "额外备注" 
+
+note: "额外备注"
+
 ---
 ```
 
