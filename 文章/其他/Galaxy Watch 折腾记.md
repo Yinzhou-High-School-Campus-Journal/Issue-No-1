@@ -14,38 +14,38 @@ note: "AI参与指数2"
 当然，买之前我也是做了不少功课的，我将在下面罗列一下其初始参数配置（也是前面提到其「性价比」的缘由）：
 
 - SoC: Exynos W1000
-    - CPU: 4× Cortex-A55 @ 1.5 GHz, 1× Cortex-A78 @ 1.6 GHz
-    - GPU: Mali-G68 MP2
-    - Architecture: ARMv8-A (Model: 32 bit)
-    - Process: Samsung 3 nm (SF3)
+  - CPU: 4× Cortex-A55 @ 1.5 GHz, 1× Cortex-A78 @ 1.6 GHz
+  - GPU: Mali-G68 MP2
+  - Architecture: ARMv8-A (Model: 32 bit)
+  - Process: Samsung 3 nm (SF3)
 - RAM: 2 GB LPDDR5
 - Storage: 32 GB eMMC 5.1
 - Screen: Super AMOLED
-    - Size: 1.5 inch
-    - Resolution: 480 × 480 (327 ppi)
+  - Size: 1.5 inch
+  - Resolution: 480 × 480 (327 ppi)
 - Connect
-    - Wi-Fi: 802.11.a/b/g/n (2.4 GHz + 5 GHz)
-    - Bluetooth v5.3
-    - Cellular Network: 4G LTE (eSIM)
-    - GNSS: GPS (L1 + L5), GLONASS, BeiDou, Galileo
-    - NFC
+  - Wi-Fi: 802.11.a/b/g/n (2.4 GHz + 5 GHz)
+  - Bluetooth v5.3
+  - Cellular Network: 4G LTE (eSIM)
+  - GNSS: GPS (L1 + L5), GLONASS, BeiDou, Galileo
+  - NFC
 - Sensors
-    - Samsung BioActive Sensor
-    - Blood Pressure Monitor
-    - SpO₂
-    - Skin Temperature Sensor
-    - Accelerometer
-    - Gyroscope
-    - Barometer
-    - Geomagnetic Sensor
-    - Ambient Light sensor
+  - Samsung BioActive Sensor
+  - Blood Pressure Monitor
+  - SpO₂
+  - Skin Temperature Sensor
+  - Accelerometer
+  - Gyroscope
+  - Barometer
+  - Geomagnetic Sensor
+  - Ambient Light sensor
 - Battery
-    - Capacity: 425 mAh
-    - Type: Li-ion
-    - Charging: Qi 15 W
+  - Capacity: 425 mAh
+  - Type: Li-ion
+  - Charging: Qi 15 W
 - Size & Weight
-    - Dimensions: 44.4 × 44.4 × 9.7 mm
-    - Weight: 33.8 g
+  - Dimensions: 44.4 × 44.4 × 9.7 mm
+  - Weight: 33.8 g
 - OS: Wear OS 5 (Android 14)
 
 我改造这块手表的初衷很简单，那就是希望其在保持基本流畅运行度的前提下，尽量增强其的功能，起到一定程度上的代替手机的作用（同时享受折腾的乐趣）。为了行文与读者参考方便，我就在此先行列出最终折腾完成后实现的功能及其依赖的软件：
@@ -150,23 +150,23 @@ adb shell settings delete global http_proxy
 
 - 路线A：*Telegram for Android*
 
-    优点是功能全、更新快；缺点是UI明显为手机设计，经常需要用*aShell*调整分辨率。注意，其在Android上提供的官方版本分成两个，一个是Google Play版，另一个是官网版本。前者的通知推送依赖FCM，应用内购依赖GMS，虽然更加省电但是显然国行手表上用不了；后者则是官网版本，不依赖任何其他组件，我建议使用这个版本。其他第三方客户端如果各位有需要可自行尝试。
+  优点是功能全、更新快；缺点是UI明显为手机设计，经常需要用*aShell*调整分辨率。注意，其在Android上提供的官方版本分成两个，一个是Google Play版，另一个是官网版本。前者的通知推送依赖FCM，应用内购依赖GMS，虽然更加省电但是显然国行手表上用不了；后者则是官网版本，不依赖任何其他组件，我建议使用这个版本。其他第三方客户端如果各位有需要可自行尝试。
 
-    下载链接：`telegram.org/dl/android/apk`；
+  下载链接：`telegram.org/dl/android/apk`；
 
-    本人使用的中文语言包：`t.me/setlanguage/zh-hans-beta`。
+  本人使用的中文语言包：`t.me/setlanguage/zh-hans-beta`。
 
 - 路线B：*TGWear*
 
-    *TGWear*是专门为Wear OS设计的版本，UI更加适配手表，但缺点就是功能缺失、更新速度慢。本人建议可以把A、B都装在手表上（32 GB正常应该绰绰有余）。
+  *TGWear*是专门为Wear OS设计的版本，UI更加适配手表，但缺点就是功能缺失、更新速度慢。本人建议可以把A、B都装在手表上（32 GB正常应该绰绰有余）。
 
-    下载链接：`github.com/TGwear/TGwear/releases`。
+  下载链接：`github.com/TGwear/TGwear/releases`。
 
 - 路线C：Telegram Web
 
-    全平台通用，但个人没在手表上用过，因为手表上打开网页操作较为麻烦，而且个人该App的使用频率蛮高的。如果你的手表容量告急或者不怎么用*Telegram*的话建议选择该路线。
+  全平台通用，但个人没在手表上用过，因为手表上打开网页操作较为麻烦，而且个人该App的使用频率蛮高的。如果你的手表容量告急或者不怎么用*Telegram*的话建议选择该路线。
 
-    网址：`web.telegram.org`。
+  网址：`web.telegram.org`。
 
 #### *Element X*
 
